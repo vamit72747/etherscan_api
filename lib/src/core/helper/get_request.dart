@@ -32,7 +32,7 @@ extension GetRequest on EtherscanAPI {
       final client = Dio(
         BaseOptions(
           baseUrl: chain.chainApiUrl,
-          connectTimeout: timeout?.inMilliseconds,
+          //connectTimeout: timeout?.inMilliseconds,
           responseType: ResponseType.json,
         ),
       );
